@@ -4,12 +4,13 @@ class QuestionsController < ApplicationController
   end
 
   def answer
+    @user_message = params[:user_message]
     if params[:user_message] == "I am going to work"
-      @answer = "Great!"
+      @coach_response = "Great!"
     elsif params[:user_message].include?("?")
-      @answer = "Silly question, get dressed and go to work!"
+      @coach_response = "Silly question, get dressed and go to work!"
     else
-      @answer = "I don't care, get dressed and go to work!"
+      @coach_response = "I don't care, get dressed and go to work!"
     end
   end
 
