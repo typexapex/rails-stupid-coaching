@@ -1,3 +1,39 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack: Helvetica, sans-serif;
+
+body {
+  font: 100% $font-stack;
+  color: black;
+}
+
+.you {
+  border-left: 2px solid gray;
+}
+
+.you h2 {
+  font-weight: lighter;
+}
+
+.coach h2 {
+  font-weight: light;
+}
+
+.coach {
+  border-left: 2px solid gray;
+  background-color: rgba(255,255,205,0.5);
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 24px;
+}
